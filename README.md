@@ -1,97 +1,74 @@
-# Aprendizaje No Supervisado: Clustering y Reducción de Dimensionalidad
+# K-Means Clustering
 
-Este repositorio contiene notebooks de Jupyter enfocados en técnicas de aprendizaje no supervisado, específicamente clustering y reducción de dimensionalidad. El objetivo es proporcionar a los estudiantes una comprensión práctica de estas técnicas y su aplicación en análisis de datos.
+Este repositorio contiene notebooks de Jupyter enfocados en clustering con K-Means, incluyendo un caso aplicado al dataset de clientes de centro comercial.
 
-## Descripción del Proyecto
+## Contenido del repositorio
 
-El proyecto incluye la implementación y análisis de las siguientes técnicas:
+- `KMeans.ipynb`: Notebook con fundamentos y flujo general de K-Means.
+- `Mall Customers KMeans.ipynb`: Aplicación de K-Means al caso de segmentacion de clientes (Mall Customers).
+- `requirements.txt`: Dependencias de Python para ejecutar los notebooks.
 
-- **Clustering**:
-  - K-Means
-  - DBSCAN
-  - Evaluación de Clusters con el Coeficiente de Silueta
-- **Reducción de Dimensionalidad**:
-  - PCA (Análisis de Componentes Principales)
-  - Visualización y Recuperación de Datos
+## Requisitos
 
-## Estructura del Proyecto
+- Python 3.10 o superior (recomendado)
+- Jupyter Notebook o JupyterLab
 
-- `Caso_Mall_Customers.ipynb`: Notebook que analiza el conjunto de datos "Mall Customers" para agrupar clientes utilizando técnicas de clustering.
-- `KMeans.ipynb`: Implementación de K-Means para clustering.
-- `DBSCAN.ipynb`: Implementación de DBSCAN para clustering basado en densidad.
-- `Reducción Dimensionalidad.ipynb`: Notebook que explora técnicas de reducción de dimensionalidad, incluyendo PCA.
-- `requirements.txt`: Lista de paquetes de Python necesarios para este proyecto.
+Dependencias principales (ver `requirements.txt` para el listado completo):
 
-## Herramientas y Tecnologías
+- pandas
+- numpy
+- scikit-learn
+- scipy
+- statsmodels
+- plotly
+- ipykernel
+- nbformat
+- requests
 
-- **Python** (se recomienda la versión 3.x)
-- **Jupyter Notebook**
-- **Bibliotecas de Análisis de Datos**:
-  - Pandas (≥2.3.1)
-  - Plotly (≥6.3.0)
-  - Scikit-learn (≥1.7.1)
-  - Seaborn
-  - Matplotlib
-  - NumPy (≥2.3.2)
-
-## Instrucciones de Instalación
+## Instalacion y ejecucion
 
 1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/jorgermzg15/aprendizaje-no-supervisado.git
-   cd aprendizaje-no-supervisado
-   ```
 
-2. Crea un entorno virtual:
-   ```bash
-   # En macOS/Linux
-   python -m venv .venv
-   source .venv/bin/activate
+```bash
+git clone https://github.com/jorgermzg15/K-Means-Clustering.git
+cd K-Means-Clustering
+```
 
-   # En Windows
-   python -m venv .venv
-   .\.venv\Scripts\activate
-   ```
+2. Crea y activa un entorno virtual:
 
-3. Instala los paquetes necesarios:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+# macOS/Linux
+python -m venv .venv
+source .venv/bin/activate
 
-4. Lanza Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
+# Windows
+python -m venv .venv
+.\.venv\Scripts\activate
+```
 
-5. Abre cualquiera de los notebooks y comienza a explorar.
+3. Instala las dependencias:
 
-## Resolución de Problemas
+```bash
+pip install -r requirements.txt
+```
 
-Si encuentras problemas:
+4. Inicia Jupyter:
 
-1. Asegúrate de que tu entorno virtual esté activado (deberías ver `(.venv)` en tu terminal).
-2. Intenta actualizar pip antes de instalar los requisitos:
-   ```bash
-   pip install --upgrade pip
-   ```
-3. Si tienes problemas con las visualizaciones:
-   ```bash
-   pip install plotly seaborn matplotlib
-   ```
-4. Si encuentras problemas con el kernel en Jupyter:
-   ```bash
-   python -m ipykernel install --user
-   ```
+```bash
+jupyter notebook
+```
 
-## Para Estudiantes
+5. Abre `KMeans.ipynb` o `Mall Customers KMeans.ipynb` y ejecuta las celdas en orden.
 
-Este repositorio está diseñado para proporcionar experiencia práctica con técnicas de aprendizaje no supervisado. Para aprovecharlo al máximo:
+## Notas
 
-1. Sigue cuidadosamente las instrucciones de instalación.
-2. Ejecuta las celdas de los notebooks en orden.
-3. Experimenta con diferentes hiperparámetros para entender su impacto.
-4. Completa los ejercicios o desafíos proporcionados en los notebooks.
+- Si usas VS Code, selecciona el kernel del entorno virtual `.venv` para evitar errores de dependencias.
+- Si falta el kernel en Jupyter:
+
+```bash
+python -m ipykernel install --user
+```
 
 ## Licencia
 
-Este proyecto está disponible para fines educativos. ¡Siéntete libre de usarlo y aprender de él!
+Uso educativo y personal.
